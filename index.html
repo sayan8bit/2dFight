@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Fight Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>2D Fighter</h1>
+    </header>
+    <div class="instruction">
+      <ul>
+        <li><strong>W :</strong> Jump</li>
+        <li><strong>A :</strong> Left</li>
+        <li><strong>D :</strong> Right</li>
+        <li><strong>S :</strong> Attack</li>
+        <li><strong>Shift + A/D :</strong> Double damage with Flick</li>
+      </ul>
+    </div>
+    <div id="game-container">
+      <div id="playerHitCount" class="hit-counter">Player Hits: 0</div>
+      <div id="computerHitCount" class="hit-counter">Computer Hits: 0</div>
+      <div id="player" class="character"></div>
+      <div id="computer" class="character"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
