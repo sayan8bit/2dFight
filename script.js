@@ -34,9 +34,9 @@ function animate() {
   let moveDirection = 0;
 
   // Handle movement keys (left and right)
-  if (keys["arrowright"] || keys["d"]) {
+  if (keys["d"]) {
     moveDirection = moveSpeed; // Move right
-  } else if (keys["arrowleft"] || keys["a"]) {
+  } else if (keys["a"]) {
     moveDirection = -moveSpeed; // Move left
   }
 
