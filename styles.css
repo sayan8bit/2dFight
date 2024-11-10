@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1e; /* Darker background for better contrast */
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: #d6a2e8; /* Light lavender for a softer, more sophisticated look */
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.instruction {
+  color: #eeeeee; /* Light grey for readability */
+  font-weight: 500;
+  font-size: large;
+  position: absolute;
+  bottom: 20px;
+}
+.instruction ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  border: 2px solid #555; /* Softer contrast border */
+  background-color: #222; /* Deep grey for better balance with character colors */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.character {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #4285f4; /* Vibrant blue for player */
+}
+
+#player {
+  left: 100px;
+  bottom: 0;
+  background-color: #4285f4; /* Player color */
+}
+
+#computer {
+  left: 600px;
+  bottom: 0;
+  background-color: #f44141; /* Intense red for the computer */
+}
+
+.sword {
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  background-color: #f9d342; /* Bright yellow for a contrasting sword color */
+  transform-origin: bottom;
+  display: none;
+}
+
+.hit-counter {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* Bright white for easy readability */
+  padding: 10px;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Slightly translucent background for clarity */
+  border-radius: 5px;
+}
+
+#playerHitCount {
+  top: 10px;
+  left: 10px;
+}
+
+#computerHitCount {
+  top: 10px;
+  right: 10px;
+}
+/* Dim effect class */
+.hit-effect {
+  opacity: 0.5; /* Make it semi-transparent */
+  transition: opacity 0.1s ease; /* Smooth transition */
+}
